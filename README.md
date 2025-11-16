@@ -1,0 +1,167 @@
+# **Edu.AI – AI-Powered Course Recommendation & Learning Path Generator (RAG System)**  
+
+Edu.AI is an intelligent student advisory assistant that generates personalized learning paths, recommends courses, and continues natural conversation using a **Retrieval-Augmented Generation (RAG)** pipeline.
+
+The system uses:
+
+- **Qdrant (Vector Database)** for semantic search  
+- **Sentence Transformers** for generating embeddings  
+- **Groq LLM (Llama 3.3-70B)** for structured learning path generation  
+- **Streamlit** for the UI  
+- **Docker** for containerized deployment  
+
+---
+
+## 🚀 **Features**
+
+### 🔍 **RAG-based Course Recommendations**
+- Extracts course metadata from a curated dataset  
+- Embeds course descriptions using Sentence Transformers  
+- Stores and retrieves vectors from Qdrant  
+- Finds the most relevant courses based on user intent  
+
+### 🎓 **AI-Generated Learning Paths**
+- Creates structured, multi-step learning plans  
+- Includes skills, URLs, course flow, duration, and outcomes  
+- Tailored to user profile (field, experience, preferences, goals)
+
+### 💬 **Conversation Memory**
+- Continues the chat even after recommendations  
+- Maintains profile & LLM history using `st.session_state`
+
+### 📦 **Full Docker Support**
+- Build once → run anywhere  
+- Suitable for cloud deployment (Render, Oracle Cloud, Railway, Fly.io)
+
+---
+
+## 🧠 **Architecture Overview**
+
+Edu.AI follows a **10-phase pipeline**:
+
+1. **Data Collection**  
+2. **Preprocessing**  
+3. **Text Chunking**  
+4. **Embedding Generation**  
+5. **Vector DB Ingestion (Qdrant)**  
+6. **Semantic Retrieval**  
+7. **Prompt Engineering**  
+8. **LLM Generation (Groq)**  
+9. **Streamlit UI**  
+10. **Dockerization & Deployment**
+
+---
+
+## 🛠 **Tech Stack**
+
+| Layer | Technology |
+|-------|------------|
+| Language | Python |
+| UI | Streamlit |
+| Embeddings | Sentence Transformers (all-MiniLM-L6-v2) |
+| Vector DB | Qdrant Cloud |
+| LLM | Groq (Llama-3.3-70B) |
+| Deployment | Docker |
+| Others | Pandas, Requests, python-dotenv |
+
+---
+
+## 📂 **Project Structure**
+
+Edu.AI/
+│── app.py
+│── requirements.txt
+│── Dockerfile
+│── .env (NOT INCLUDED)
+│── config/
+│ └── config.py
+│── models/
+│ └── embeddings.py
+│── utils/
+│ ├── ingest_courses.py
+│ ├── indexer.py
+│ ├── retrieve.py
+│ ├── prompts.py
+│── data/
+│ └── course_dataset.csv
+│── README.md
+
+yaml
+Copy code
+
+---
+
+## 🔑 **Environment Variables (.env)**  
+*(Do NOT upload this to GitHub)*
+
+HF_API_TOKEN=
+QDRANT_URL=
+QDRANT_API_KEY=
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+COLLECTION_NAME=courses_collection
+TOP_K=6
+GROQ_API_KEY=
+GROQ_MODEL=llama-3.3-70b-versatile
+DEBUG=True
+
+yaml
+Copy code
+
+---
+
+## 🐳 **Docker Usage**
+
+### **Build the image**
+```sh
+docker build -t eduai-app .
+Run the container
+sh
+Copy code
+docker run -p 8501:8501 --env-file .env eduai-app
+App will be available at:
+👉 http://localhost:8501
+
+☁️ Deployment Notes
+You can deploy Edu.AI on:
+
+Option 1 — Render (Docker Image Deploy)
+Upload the Docker image
+
+Add environment variables
+
+Deploy the server
+
+Option 2 — Oracle Cloud Free Tier
+Use a Compute Instance
+
+Pull Docker image
+
+Run container
+
+Option 3 — Fly.io / Railway.app / GitHub Actions
+Supports Docker-based deployment
+
+Free-tier friendly
+
+🤝 Contributing
+Pull requests are welcome!
+Please open an issue to discuss major changes before submitting.
+
+📜 License
+MIT License.
+
+⭐ Show Your Support
+If you found this helpful, please ⭐ the repository!
+
+yaml
+Copy code
+
+---
+
+If you want, I can also generate:
+
+✅ Shields badges  
+✅ A banner image for the README  
+✅ Auto-generated documentation  
+✅ A workflow diagram image  
+Just tell me!
