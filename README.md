@@ -1,4 +1,4 @@
-# **Edu.AI – AI-Powered Course Recommendation & Learning Path Generator (RAG System)**  
+# **Edu.AI – AI-Powered Chatbot for Course Recommendation & Learning Path Generator (RAG System)**  
 
 Edu.AI is an intelligent student advisory assistant that generates personalized learning paths, recommends courses, and continues natural conversation using a **Retrieval-Augmented Generation (RAG)** pipeline.
 
