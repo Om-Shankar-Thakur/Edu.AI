@@ -82,7 +82,7 @@ docker run -p 8501:8501 --env-file .env eduai-app
 ```
 App will be available at:
 ```
-👉 http://localhost:8501
+👉 https://eduai-app.onrender.com/
 ```
 
 
