@@ -85,6 +85,7 @@ App will be available at:
 👉 https://eduai-app.onrender.com/
 ```
 
+---
 
 ☁️ Deployment Notes
 You can deploy Edu.AI on:
@@ -98,12 +99,18 @@ Use a Compute Instance -> Pull Docker image -> Run container
 Option 3 — Fly.io / Railway.app / GitHub Actions
 Supports Docker-based deployment (Free-tier friendly)
 
+---
+
 🤝 Contributing
 Pull requests are welcome!
 Please open an issue to discuss major changes before submitting.
 
+---
+
 📜 License
 MIT License.
+
+---
 
 ⭐ Show Your Support
 If you found this helpful, please ⭐ the repository!
