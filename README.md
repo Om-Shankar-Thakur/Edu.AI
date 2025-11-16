@@ -66,28 +66,7 @@ Edu.AI follows a **10-phase pipeline**:
 
 ---
 
-## 📂 **Project Structure**
 
-Edu.AI/
-│── app.py
-│── requirements.txt
-│── Dockerfile
-│── .env (NOT INCLUDED)
-│── config/
-│ └── config.py
-│── models/
-│ └── embeddings.py
-│── utils/
-│ ├── ingest_courses.py
-│ ├── indexer.py
-│ ├── retrieve.py
-│ ├── prompts.py
-│── data/
-│ └── course_dataset.csv
-│── README.md
-
-
----
 
 
 ## 🐳 **Docker Usage**
