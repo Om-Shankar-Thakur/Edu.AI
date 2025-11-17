@@ -75,3 +75,4 @@ RULES:
 - URLs must appear on their own lines.
 - Output must look like a professional curriculum created by Edu.AI.
 """
+    
