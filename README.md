@@ -82,7 +82,7 @@ docker run -p 8501:8501 --env-file .env eduai-app
 ```
 App will be available at:
 ```
-👉 https://eduai-app.onrender.com/
+👉 [Try the app](https://eduai-app-production.up.railway.app/)
 ```
 
 ---
@@ -90,14 +90,7 @@ App will be available at:
 ☁️ Deployment Notes
 You can deploy Edu.AI on:
 
-Option 1 — Render (Docker Image Deploy)
-Upload the Docker image -> Add environment variables -> Deploy the server
-
-Option 2 — Oracle Cloud Free Tier
-Use a Compute Instance -> Pull Docker image -> Run container
-
-Option 3 — Fly.io / Railway.app / GitHub Actions
-Supports Docker-based deployment (Free-tier friendly)
+Deployed on Railway.app
 
 ---
 
