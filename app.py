@@ -164,7 +164,7 @@ if submitted and user_input:
             st.session_state.conversation.append(("assistant", reply))
             st.rerun()
 
-# (Optional) show retrieved courses for debugging - set to True to display
+#  show retrieved courses for debugging - set to True to display
 if False:
     if st.session_state.retrieved_courses:
         st.subheader("Recommended Courses (raw)")
