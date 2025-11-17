@@ -82,7 +82,7 @@ docker run -p 8501:8501 --env-file .env eduai-app
 ```
 App will be available at:
 ```
-👉 [Try the app](https://eduai-app-production.up.railway.app/)
+👉 'https://eduai-app-production.up.railway.app/'
 ```
 
 ---
